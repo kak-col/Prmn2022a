@@ -44,6 +44,6 @@ public class kadai5 {
         for (int i : score) {
             sum += i;
         }
-        return (float)sum/score.length;
+        return (double)sum/score.length;
     }
 }
