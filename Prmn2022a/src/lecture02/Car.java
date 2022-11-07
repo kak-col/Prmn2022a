@@ -2,8 +2,13 @@ package lecture02;
 
 public class Car {
     int fuel;
-    Car(){
+    Tire[] tires;
+    Engine engine;
+
+    Car(Tire[] tires, Engine engine){
         fuel = 0;
+        this.tires = tires;
+        this.engine = engine;
     }
 
     void run(){
@@ -13,6 +18,9 @@ public class Car {
         }else{
             System.out.println("走れませんでした。");
         }
+    }
 
+    void startEngine(){
+        this.engine.start();
     }
 }
