@@ -18,7 +18,7 @@ public class Fighter {
     }
 
     public boolean isAlive(){
-        return hitPoint <= 0;
+        return hitPoint >= 0;
     }
 
     public int getHitPoint() {

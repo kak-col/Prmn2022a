@@ -49,10 +49,10 @@ public class ATM {
                     System.out.print("口座番号:"+number+" から "+money+" 円引き出しました。");
                 }
                 System.out.println("残高:"+account.getBalance()+"円です。");
-                return account.getBalance();
+                return money;
             }
         }
         System.out.println("口座番号:"+number+" は存在しません。");
-        return -1;
+        return 0;
     }
 }

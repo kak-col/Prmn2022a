@@ -7,13 +7,13 @@ public class Exercise4_1 {
         while(true) {
             p.attack(e);
             System.out.println(e.getName()+"の残りhitPoint:"+e.getHitPoint());
-            if(e.isAlive()) {
+            if(!e.isAlive()) {
                 System.out.println(e.getName()+"は倒れた。");
                 break;
             }
             e.attack(p);
             System.out.println(p.getName()+"の残りhitPoint:"+p.getHitPoint());
-            if(p.isAlive()) {
+            if(!p.isAlive()) {
                 System.out.println(p.getName() + "は倒れた。");
                 break;
             }
