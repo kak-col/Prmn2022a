@@ -9,13 +9,13 @@ public class Exercise3_2 {
         System.out.print("何行分入力しますか？");
         int l = scanner.nextInt();
         scanner.nextLine();
-        for (int i = 0; i < l; i++) {
+        for (int i = 1; i < l+1; i++) {
             System.out.println(i+"行目");
             strings.add(scanner.nextLine());
         }
         System.out.println("入力した文字列:");
         for (String string : strings) {
-            System.out.println(string);
+            System.out.println("["+strings.indexOf(string)+"]"+string);
         }
     }
 }
