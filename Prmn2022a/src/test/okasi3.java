@@ -14,7 +14,7 @@ public class okasi3 {
 //
         ArrayList<Dough> t = new ArrayList<>();
         for (int i = 0; i < 256; i++) {
-            Dough temp = new Dough(i);
+            //Dough temp = new Dough(i);
             t.add(new Dough(i));
         }
         Collections.sort(t,new DoughSort());
@@ -28,9 +28,10 @@ public class okasi3 {
             String str;
             for (Dough dough : t) {
                 str = dough.simulate();
-                if(str.charAt(str.indexOf('\n')+1) == '1' &&
-                        str.charAt(str.indexOf('\n')+4) == '1' &&
-                        //str.charAt(str.indexOf('\n')+5) == '0' &&
+                if(str.charAt(str.indexOf('\n')+4) == '1' &&
+                        //str.charAt(str.indexOf('\n')+2) == '1' &&
+                        //str.charAt(str.indexOf('\n')+4) == '1' &&
+                        str.charAt(str.indexOf('\n')+5) == '1' &&
                         str.charAt(str.indexOf('\n')+6) == '1'){
                     //filewriter.write(str.substring(0,8)+str.substring(str.length()-17,str.length())+"\n\n");
                     filewriter.write(dough.simulate()+"\n\n");

@@ -2,8 +2,8 @@ package test;
 
 public class Dough {
     private final int[] zlist = {20,8,3,15,30,5,12,7};
-    private final int[] border1 = {0,40,70,100};
-    //private final int[] border1 = {0,30,60,100};
+    //private final int[] border1 = {0,40,70,100};
+    private final int[] border1 = {0,30,60,100};
 
     private boolean[] flag = new boolean[8];
     private int maru = 0;
